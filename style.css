@@ -22,8 +22,8 @@ body {
 }
 
 #player {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   /* Use a Hello Kitty image as the background */
   background-image: url("https://www.pngmart.com/files/16/Pink-Kitty-PNG-Photos.png");
   background-size: contain;
@@ -34,8 +34,8 @@ body {
 }
 
 .apple-item {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background-image: url("images/cartoon-apple.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -44,8 +44,8 @@ body {
 }
 
 .cupcake-item {
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   background-image: url("images/hello-kitty-cupcake.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -68,14 +68,14 @@ body {
   }
 
   #player {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .apple-item,
   .cupcake-item {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -99,14 +99,14 @@ body {
   }
 
   #player {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 
   .apple-item,
   .cupcake-item {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
   }
 
   #score-board {
