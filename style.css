@@ -1,0 +1,103 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdeff2; /* Light pink background */
+  color: #d15a89;
+}
+
+#game-container {
+  width: 800px;
+  height: 600px;
+  border: 3px solid #ffb3c6;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#player {
+  width: 80px;
+  height: 80px;
+  /* Use a Hello Kitty image as the background */
+  background-image: url("https://www.pngmart.com/files/16/Pink-Kitty-PNG-Photos.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 10px;
+  left: 360px; /* Start in the middle */
+}
+
+.apple-item {
+  width: 40px;
+  height: 40px;
+  background-image: url("http://www.pngmart.com/files/1/Apple-Fruit-PNG-Transparent-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cupcake-item {
+  width: 45px;
+  height: 45px;
+  background-image: url("https://www.pngmart.com/files/5/Cupcake-PNG-Free-Download.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#score-board {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  #game-container {
+    width: 90vw;
+    height: 70vh;
+  }
+
+  #player {
+    width: 60px;
+    height: 60px;
+  }
+
+  .item {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #game-container {
+    width: 100vw;
+    height: 80vh;
+    border-radius: 0;
+    border: none;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #player {
+    width: 50px;
+    height: 50px;
+  }
+
+  .item {
+    width: 25px;
+    height: 25px;
+  }
+
+  #score-board {
+    font-size: 18px;
+  }
+}
