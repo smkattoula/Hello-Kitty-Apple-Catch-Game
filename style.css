@@ -34,9 +34,9 @@ body {
 }
 
 .apple-item {
-  width: 40px;
-  height: 40px;
-  background-image: url("http://www.pngmart.com/files/1/Apple-Fruit-PNG-Transparent-Image.png");
+  width: 50px;
+  height: 50px;
+  background-image: url("images/cartoon-apple.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -44,9 +44,9 @@ body {
 }
 
 .cupcake-item {
-  width: 45px;
-  height: 45px;
-  background-image: url("https://www.pngmart.com/files/5/Cupcake-PNG-Free-Download.png");
+  width: 55px;
+  height: 55px;
+  background-image: url("images/hello-kitty-cupcake.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -120,7 +120,7 @@ body {
 @media (orientation: landscape) and (max-width: 820px) {
   h1 {
     font-size: 1.2em;
-    margin-top: 5px;
+    margin-top: 50px;
     margin-bottom: 2px;
   }
   #game-container {
