@@ -1,10 +1,14 @@
 body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Chalkboard SE", "Marker Felt", "Comic Sans MS", cursive,
+    sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fdeff2; /* Light pink background */
   color: #d15a89;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
 #game-container {
@@ -68,7 +72,8 @@ body {
     height: 60px;
   }
 
-  .item {
+  .apple-item,
+  .cupcake-item {
     width: 30px;
     height: 30px;
   }
@@ -76,15 +81,21 @@ body {
 
 /* Mobile */
 @media (max-width: 480px) {
-  #game-container {
-    width: 100vw;
-    height: 80vh;
-    border-radius: 0;
-    border: none;
+  body {
+    justify-content: space-between; /* Distribute space between elements */
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Smaller font for title */
+    margin-top: 10px; /* Reduce top margin */
+    margin-bottom: 5px;
+  }
+
+  #game-container {
+    width: 95vw;
+    flex-grow: 1; /* Allow game container to take available space */
+    border: 3px solid #ffb3c6; /* Re-add border */
+    border-radius: 15px; /* Keep rounded corners */
   }
 
   #player {
@@ -92,12 +103,33 @@ body {
     height: 50px;
   }
 
-  .item {
+  .apple-item,
+  .cupcake-item {
     width: 25px;
     height: 25px;
   }
 
   #score-board {
-    font-size: 18px;
+    font-size: 16px; /* Smaller font for score */
+    margin-top: 5px; /* Reduce top margin */
+    margin-bottom: 100px;
+  }
+}
+
+/* Landscape Mobile (separate media query) */
+@media (orientation: landscape) and (max-width: 820px) {
+  h1 {
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+  #game-container {
+    height: 55vh; /* Adjust height for landscape to fit content */
+    width: 90vw;
+  }
+  #score-board {
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 5px;
   }
 }
